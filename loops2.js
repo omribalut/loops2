@@ -24,9 +24,9 @@ checkTwoNumbers(3, 8)
 
 // prime number
 function checkIfPrime(num){
-  for(let i = 2; i < num; i++){
+  for(let i = 2; i <= num; i++){
      if(num % i === 0){
-         return "false"
+         return false
       }
       else{
           return num
@@ -34,7 +34,7 @@ function checkIfPrime(num){
   };
 };
 
-console.log(checkIfPrime(3));
+console.log(checkIfPrime(4));
 
 
 // sum true/false
