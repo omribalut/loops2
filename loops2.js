@@ -24,8 +24,10 @@ checkTwoNumbers(3, 8)
 
 // prime number
 function checkIfPrime(num){
+  if (num < 2) //negative numbers aren't prime numbers//zero cant be divided//by definition 1 isn't a prime number
+  return false
   for(let i = 2; i <= num; i++){
-     if(num % i === 0){
+     if(num % i === 0 && num !== 2){
          return false
       }
       else{
@@ -34,7 +36,7 @@ function checkIfPrime(num){
   };
 };
 
-console.log(checkIfPrime(4));
+console.log(checkIfPrime(0));
 
 
 // sum true/false
