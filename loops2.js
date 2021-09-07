@@ -54,10 +54,9 @@ console.log(checkIfDevided(4,12));
     function loveHate(num){
 
       for(let i = 1; i <= num; i++){
-         if(i % 2 === 1)
+         if(i % 2 === 1) {
          console.log("LOVE");
-    
-          else { 
+         } else { 
             console.log("HATE");
           }
         }
